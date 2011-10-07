@@ -1,0 +1,61 @@
+SYNOPSIS
+	sewatOOol [--toc long|short|both] [--pdf print|slides|both] [--hidden] 
+              [--no-save] [--no-close] [--help] filename
+
+DESCRIPTION
+
+OPTIONS
+	filename
+		Chemin du fichier à ouvrir
+		
+		Ce chemin peut être absolu ou relatif, et peut être précédé par file:
+		ou pas.
+
+	[--toc long|short|both] 
+		Choix de la table des matières à générer.
+		
+		long représente la table des matières complète, à 2 niveaux de titres, 
+		généralement en fin de document, en mode note, sur la page dont le nom 
+		est précisé par la propriété preference.toc.page.name 
+		(cf. sewatoool.properties).
+		
+		short représente le plan simplifié, avec les titres principaux, 
+		généralement en début de document, sur la page dont le nom est précisé 
+		par la propriété preference.shorttoc.page.name.
+		
+		both génère les deux tables des matières.
+		
+		Par défaut, sewatOOol ne génère rien.
+		
+	[--pdf print|slides|both] 
+		Choix de la génération de document pdf, après la génération de table 
+		des matières.
+		
+		print permet de générer le document en mode notes, en vue de son 
+		impression. Cette génération utilise une imprimante PDF qui doit être
+		paramétrée dans le fichier de configuration sewatoool.properties. 
+		
+		slides permet de générer le document en mode dessin, pour la 
+		projection. Cette option utilise la génération PDF intégrée à Open
+		Office.
+		
+		both permet de générer les deux documents pdf.
+		
+		Par défaut, sewatOOol ne génère rien.
+		
+	[--hidden]
+		Ouverture du document sans affichage.
+		
+		Par défaut, sewatOOol ouvre le document à l'écran.
+		
+	[--no-save]
+		Ne sauvegarde pas le document après génération.
+		
+	[--no-close]
+		Ne referme pas le document après génération
+		
+	[--help]
+		Affiche ce texte d'aide
+
+EXEMPLES
+	
